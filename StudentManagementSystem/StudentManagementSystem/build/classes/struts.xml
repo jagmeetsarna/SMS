@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="default" extends="struts-default">
+
+		<action name="loginAction" class="com.xavient.collage.action.Login"
+			method="execute">
+			<result name="admin">admin.jsp</result>
+			<result name="user">user.jsp</result>
+			<result name="error">index.jsp</result>
+			<result name="input">index.jsp</result>
+		</action>
+		<action name="registerAction" class="com.xavient.collage.action.RegisterAction"
+			method="prepRegistration">
+			<result name="success">Registration.jsp</result>
+		</action>
+		<action name="register" class="com.xavient.collage.action.RegisterAction"
+			method="processRegistration">
+			<result name="success">notification.jsp</result>
+			<result name="input">Registration.jsp</result>
+			<result name="error">fail.jsp</result>
+		</action>
+
+		<action name="viewrecords" class="com.my.datacon.DataConnection"
+			method="execute">
+			<result name="success">userdetails.jsp</result>
+		</action>
+		<action name="aboutyou" class="com.xavient.collage.action.UserAction"
+			method="getAboutDetails">
+			<result name="user">aboutyou.jsp</result>
+		</action>
+
+		<action name="deletestudent" class="com.xavient.collage.action.UserAction"
+			method="deleteUser">
+			<result name="success" type="redirectAction">
+				<param name="actionName">viewrecords</param>
+			</result>
+		</action>
+		<action name="updatestudent" class="com.xavient.collage.action.UserAction"
+			method="generateUser">
+			<result name="success">updateuser.jsp</result>
+		</action>
+		<action name="updatesubmit" class="com.xavient.collage.action.UpdateAction"
+			method="updateUser">
+			<result name="success">updated.jsp</result>
+		</action>
+		<action name="worksheet" class="com.xavient.collage.action.UserAction"
+			method="getAboutDetails">
+			<result name="user">worksheet.jsp</result>
+		</action>
+		<action name="coursedetails" class="com.xavient.collage.action.UserAction"
+			method="generateCourse">
+			<result name="success">course.jsp</result>
+		</action>
+		<action name="attendance" class="com.xavient.collage.action.UserAction"
+			method="generateUser">
+			<result name="success">saveAttendance.jsp</result>
+		</action>
+		<action name="saveAttendance" class="com.xavient.collage.action.AttendanceAction"
+			method="saveAndViewAttendance">
+			<result name="success" type="redirectAction">
+				<param name="actionName">viewrecords</param>
+			</result>
+			<result name="input">saveAttendance.jsp</result>
+		</action>
+		<action name="showAttendance" class="com.xavient.collage.action.UserAction"
+			method="generateAttendance">
+			<result name="success">showAttendance.jsp</result>
+		</action>
+		<action name="searchStudent" class="com.xavient.collage.action.UserAction"
+			method="searchStudent">
+			<result name="success">
+				userdetails.jsp
+			</result>
+		</action>
+		<action name="feedback" class="com.xavient.collage.action.FeedbackAction"
+			method="Feedback">
+
+			<result name="success">
+				querysuccess.jsp
+			</result>
+		</action>
+		<action name="feedbackForm" class="com.xavient.collage.action.UserAction"
+			method="getAboutDetails">
+
+			<result name="user">
+				feedback.jsp
+			</result>
+		</action>
+		<action name="feedbacks" class="com.xavient.collage.action.FeedbackAction"
+			method="feedBackStudent">
+			<result name="success">adminFeedback.jsp</result>
+		</action>
+	 
+        <action name="userImage" class="com.xavient.collage.action.FileUploadAction">  
+            <interceptor-ref name="fileUpload">  
+                <param name="maximumSize">2097152</param>  
+  
+                <param name="allowedTypes">  
+                    image/png,image/gif,image/jpeg,image/pjpeg  
+                                </param>  
+            </interceptor-ref>  
+            <interceptor-ref name="defaultStack"></interceptor-ref>  
+            <result name="success">imageshow.jsp</result>  
+            <result name="input">imageupload.jsp</result>  
+        </action>  
+ 
+	</package>
+
+
+
+</struts>

@@ -1,0 +1,240 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px
+}
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.greatIdea {
+	padding-left: 60px;
+	padding-top: 22px;
+	font-size: 16px;
+	font-style: italic;
+	color: #ffffff;
+	font-weight:bold;
+	font-family: 'Dosis', sans-serif;
+}
+
+.headbg {
+	background-image: url(../images/logobg.GIF);
+	background-repeat: repeat-x;
+}
+
+h1 {
+	color: #ffffff;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+}
+
+.header {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 15px;
+	color: #ffffff;
+}
+
+.headerR {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 15px;
+}
+
+#register {
+	background: white;;
+}
+
+.txt {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+.txtstrong {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.errmsg {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FF0000;
+	list-style: none;
+	margin: 0 auto;
+	background:none;
+	float:right;
+}
+
+.required {
+	color: #FF0000;
+}
+
+.error {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #FF0000;
+	list-style: none;
+	float: right;
+	position: relative;
+	right: 470px;
+	margin: 0 auto;
+	padding:2px;
+	background:none;
+	
+}
+
+.txtbox_new {
+	width: 120px;
+	height: 18px;
+	border-width: 1px;
+	border-color: gray;
+	color: #515151;
+}
+
+.btnLogin {
+	color: #ffffff;
+	background: url(../images/loginBg.gif) no-repeat;
+	width: 78px;
+	height: 23px;
+	border: none;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.btnLogoff {
+	color: #ffffff;
+	background: url(../images/logout-button.png) no-repeat;
+	width: 85px;
+	height: 21px;
+	border: none;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.submitbtn {
+	margin-top: 10px;
+	height: 25px;
+	width: 50px;
+	background-color: #FFFFFF;
+	color: #660000;
+	border-color: #660000;
+	border: 1px;
+}
+
+.botbg {
+	background-image: url(../images/bottom_icon.gif);
+	background-repeat: repeat-x;
+	height: 48px;
+}
+
+.btnPrevious {
+	color: #ffffff;
+	background: url(../images/previous.gif) no-repeat;
+	width: 78px;
+	height: 24px;
+	border: none;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.btnSearch {
+	color: #ffffff;
+	background: url(../images/search.gif) no-repeat;
+	width: 78px;
+	height: 24px;
+	border: none;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.btnEdit {
+	color: #ffffff;
+	background: url(../images/edit.gif) no-repeat;
+	width: 58px;
+	height: 24px;
+	border: none;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.btnDelete {
+	color: #ffffff;
+	background: url(../images/delete.gif) no-repeat;
+	width: 58px;
+	height: 24px;
+	border: none;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.errDiv {
+	height: 10px;
+	width: 400px;
+	color: #ff0000;
+	padding-left: 2px;
+}
+
+.span {
+	font-size: 17px;
+}
+
+.userPage {
+	font-size: 15px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.user {
+	background-color: #660000;
+	margin: 0;
+	padding: 8px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #f1f1f1;
+}
+
+li a {
+	display: block;
+	color: #000;
+	padding: 8px 0 8px 16px;
+	text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+	background-color: #555;
+	color: white;
+}
+
+.aboutyoupostion {
+	position: relative;
+	top: -163px;
+}
+
+table a {
+	text-decoration: none;
+	color: #4d4d4d;
+	margin: 0 auto;
+
+}
+
+table a:hover {
+	background-color: #555;
+	color: white;
+}
